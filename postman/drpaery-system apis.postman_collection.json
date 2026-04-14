@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "ff68c52c-ab3b-4164-a5a1-ce1fa23810f6",
+    "name": "drpaery-system apis",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50535963",
+    "_collection_link": "https://go.postman.co/collection/50535963-ff68c52c-ab3b-4164-a5a1-ce1fa23810f6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Items",
+      "item": [
+        {
+          "name": "Post all items",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Ghagra\",\r\n  \"category\": \"Ethnic\",\r\n  \"size\": \"M\",\r\n  \"pricePerDay\": 800,\r\n  \"availabilityStatus\": \"AVAILABLE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "items"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get all items",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Ghagra\",\r\n  \"category\": \"Ethnic\",\r\n  \"size\": \"M\",\r\n  \"pricePerDay\": 800,\r\n  \"availabilityStatus\": \"AVAILABLE\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "items"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rentals",
+      "item": [
+        {
+          "name": "Create rental information",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 2,\r\n  \"itemId\": 2,\r\n  \"rentDate\": \"2026-04-15\",\r\n  \"returnDate\": \"2026-04-18\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/rentals",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "rentals"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get rentals information",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 2,\r\n  \"itemId\": 2,\r\n  \"rentDate\": \"2026-04-15\",\r\n  \"returnDate\": \"2026-04-18\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/rentals",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "rentals"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update rental information to return",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": 2,\r\n  \"itemId\": 2,\r\n  \"rentDate\": \"2026-04-15\",\r\n  \"returnDate\": \"2026-04-18\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8081/api/rentals/return/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "api",
+                "rentals",
+                "return",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -22,5 +22,5 @@ public class Rental {
     private LocalDate actualReturnDate;
 
     private String status;
-    private double totalPrice;
+    private Double totalPrice;
 }

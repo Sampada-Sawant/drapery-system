@@ -16,6 +16,6 @@ public class Item {
     private String name;
     private String category;
     private String size;
-    private double pricePerDay;
+    private Double pricePerDay;
     private String availabilityStatus;
 }
